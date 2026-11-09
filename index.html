@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>被比较与被开玩笑应对话术包 · 六类场景十八句现成回应</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+html,body{background:#F1EAE1}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",sans-serif;
+  color:#33403D;font-size:16px;line-height:1.72;-webkit-font-smoothing:antialiased}
+
+/* ---------- 布局 ---------- */
+.wrap{max-width:430px;margin:0 auto;background:#FAF7F2;min-height:100vh;box-shadow:0 0 60px rgba(80,90,84,.08)}
+@media(min-width:900px){
+  .wrap{max-width:1060px;display:flex;align-items:flex-start;background:#FAF7F2;padding:0}
+  .side{width:266px;flex:0 0 266px;position:sticky;top:0;height:100vh;overflow-y:auto;background:#F5EFE7;border-right:1px solid #EAE1D5;padding:26px 16px 40px}
+  .main{flex:1;min-width:0;padding:0 34px 70px}
+  .mobilenav{display:none}
+  .topbar{display:block !important}
+}
+.main{padding:0 20px 70px}
+.side{display:none}
+.mobilenav{display:block;position:sticky;top:0;z-index:30;background:rgba(250,247,242,.96);backdrop-filter:blur(8px);
+  border-bottom:1px solid #EFE8DF;padding:10px 0 9px}
+.mobilenav .mrow{display:flex;gap:7px;overflow-x:auto;padding:0 16px;-webkit-overflow-scrolling:touch}
+.mobilenav .mrow::-webkit-scrollbar{display:none}
+.mchip{flex:0 0 auto;white-space:nowrap;font-size:12px;font-weight:700;color:#6B7A76;border:1px solid #EAE1D5;
+  background:#fff;border-radius:999px;padding:5px 12px;text-decoration:none}
+.mchip.on{background:#4E8C84;border-color:#4E8C84;color:#fff}
+
+/* ---------- 通用 ---------- */
+.eyebrow{font-size:12px;letter-spacing:.18em;color:#9AA8A4;font-weight:600}
+.h1{font-size:28px;line-height:1.3;font-weight:800;letter-spacing:-.01em}
+.lede{color:#63736F;font-size:14.5px}
+.tag{display:inline-block;padding:4px 11px;border-radius:999px;font-size:12px;font-weight:700;background:#EAF3F0;color:#4E8C84}
+.tag.a{background:#FBEADC;color:#B46B3C}.tag.c{background:#ECE9F7;color:#6E65A8}
+.tag.d{background:#E3ECF5;color:#4B7196}
+.muted{color:#8C9A96;font-size:12.5px;line-height:1.8}
+.card{background:#fff;border-radius:22px;padding:20px 18px;box-shadow:0 6px 22px rgba(74,90,84,.07)}
+.rule{height:1px;background:#EFE8DF;margin:22px 0}
+.kicker{font-size:12px;letter-spacing:.16em;color:#9AA8A4;font-weight:700}
+
+/* ---------- 封面 ---------- */
+.cover{padding:40px 0 10px}
+.cover .h1{margin:12px 0 10px}
+.cover .lede{margin:0 0 16px}
+.cover .chips{display:flex;flex-wrap:wrap;gap:8px;margin:0}
+.chip{background:#fff;border:1px solid #EEE5DA;border-radius:999px;padding:6px 13px;font-size:12.5px;color:#5C6B67;font-weight:600}
+.topbar{display:none}
+
+/* ---------- 目录（侧栏） ---------- */
+.side .st{font-size:12px;letter-spacing:.16em;color:#9AA8A4;font-weight:700;margin:0 6px 14px}
+.side .sp{font-size:12.5px;font-weight:800;color:#33403D;margin:20px 6px 8px;display:flex;align-items:center;gap:7px}
+.side .sp .n{width:20px;height:20px;border-radius:7px;background:#EDE5DA;color:#8C9A96;font-size:11px;font-weight:800;
+  display:flex;align-items:center;justify-content:center}
+.side a{list-style:none;text-decoration:none;display:flex;align-items:center;gap:8px;font-size:13px;color:#6B7A76;
+  padding:7px 10px;border-radius:10px;line-height:1.5}
+.side a:hover{background:#EFE7DC}
+.side a .st2{flex:0 0 auto;font-size:10px;font-weight:800;color:#fff;background:#71B0A4;border-radius:5px;padding:1px 5px}
+.side a .st3{flex:0 0 auto;font-size:10px;font-weight:700;color:#B0B8B4;border:1px solid #E3DCD2;border-radius:5px;padding:1px 5px}
+.side a.open{color:#33403D;font-weight:700;background:#fff;box-shadow:0 3px 10px rgba(74,90,84,.06)}
+
+/* ---------- 8 类人格 ---------- */
+.types{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+@media(min-width:900px){.types{grid-template-columns:repeat(4,1fr)}}
+.tcard{background:#fff;border-radius:16px;padding:13px 13px;box-shadow:0 4px 14px rgba(74,90,84,.06);border-left:3px solid #71B0A4}
+.tcard.b1{border-left-color:#E9A178}.tcard.b2{border-left-color:#8E86C4}.tcard.b3{border-left-color:#5B7FA6}.tcard.b4{border-left-color:#C9A15E}
+.tcard .tn{font-size:14px;font-weight:800;line-height:1.4}
+.tcard .td{font-size:12px;color:#8C9A96;margin-top:5px;line-height:1.65}
+
+/* ---------- 速查表 ---------- */
+.qtwrap{background:#fff;border-radius:22px;padding:16px 12px 12px;box-shadow:0 6px 22px rgba(74,90,84,.07);margin-top:14px}
+.qt{width:100%;border-collapse:collapse;table-layout:fixed}
+.qt th,.qt td{border-bottom:1px dashed #EFE8DF;padding:9px 7px;vertical-align:top;text-align:left;font-size:11.5px;line-height:1.6}
+.qt th{font-size:11.5px;color:#8C9A96;font-weight:800}
+.qt tr:last-child td{border-bottom:0}
+.qt .pn{font-weight:800;color:#33403D;font-size:12px}
+.qt .sg{color:#8C9A96}
+.qt .ans{color:#4B5C58;font-weight:600}
+.qt th:nth-child(1),.qt td:nth-child(1){width:74px}
+.qt th:nth-child(2),.qt td:nth-child(2){width:82px}
+
+/* ---------- 章节 ---------- */
+.part{margin:38px 0 0}
+.part-h{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.part-h .pn{width:30px;height:30px;border-radius:10px;background:#4E8C84;color:#fff;font-size:13px;font-weight:800;
+  display:flex;align-items:center;justify-content:center}
+.part-h .pt{font-size:18px;font-weight:800}
+.part-sub{color:#9AA8A4;font-size:12.5px;margin:0 0 16px 40px}
+.ch{background:#fff;border-radius:24px;padding:22px 18px;box-shadow:0 8px 26px rgba(74,90,84,.08);margin-bottom:16px;scroll-margin-top:64px}
+.ch .ck{font-size:11.5px;letter-spacing:.1em;color:#B0895F;font-weight:800}
+.ch .ct{font-size:21px;font-weight:800;line-height:1.4;margin:7px 0 4px}
+.ch .cs{font-size:13px;color:#9AA8A4;margin-bottom:6px}
+.blk{margin-top:18px;padding-top:16px;border-top:1px dashed #EFE8DF}
+.blk:first-of-type{border-top:0;padding-top:4px}
+.lbl{display:flex;align-items:center;gap:8px;font-size:14.5px;font-weight:800;margin-bottom:11px}
+.lbl .n{width:22px;height:22px;border-radius:8px;background:#EAF3F0;color:#4E8C84;font-size:12px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.blk p{font-size:14.5px;line-height:1.78;color:#4B5C58;margin-bottom:9px}
+.blk p:last-child{margin-bottom:0}
+.blk ul{list-style:none}
+.blk li{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;line-height:1.75;color:#4B5C58;padding:5px 0}
+.blk li .d{flex:0 0 6px;width:6px;height:6px;border-radius:50%;background:#9CC4BC;margin-top:11px}
+.blk li b{color:#33403D}
+.say{display:flex;gap:12px;align-items:flex-start;background:#FAF7F2;border:1px solid #EFE7DC;border-radius:16px;padding:14px 15px;margin-bottom:10px}
+.say .sn{flex:0 0 auto;width:22px;height:22px;border-radius:8px;background:#71B0A4;color:#fff;font-size:12px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;margin-top:3px}
+.say .st{flex:1}
+.say .st .sh{font-size:12px;font-weight:800;color:#B0895F;margin-bottom:4px;letter-spacing:.02em}
+.say .st .sq{font-size:15px;line-height:1.78;color:#33403D}
+.say .st .sn2{font-size:12.5px;color:#9AA8A4;margin-top:6px}
+.say.b2 .sn{background:#E9A178}.say.b3 .sn{background:#8E86C4}
+.prac{background:#EAF4F1;border-radius:18px;padding:16px 15px;margin-top:16px}
+.prac .lbl .n{background:#4E8C84;color:#fff}
+.prac li .d{background:#71B0A4}
+.prac .lbl{color:#2F5F59}
+.prac p,.prac li{color:#3B5B57}
+.next{margin-top:14px;background:#FBEADC;border-radius:16px;padding:14px 15px}
+.next .lbl .n{background:#E9A178;color:#fff}
+.next .lbl{color:#8A5A2E}
+.next p{color:#6B4B2C}
+.chfoot{display:flex;gap:10px;margin-top:16px}
+.chfoot .rbtn{flex:1;text-align:center;padding:12px;border:0;border-radius:14px;font-size:14px;font-weight:800;cursor:pointer;font-family:inherit;
+  background:#fff;border:1px solid #E9E1D6;color:#6B7A76;text-decoration:none}
+
+.tbd{background:#FBF7F0;border:1px dashed #E3DCD2;border-radius:20px;padding:20px 18px;margin-bottom:14px}
+.tbd .tt{font-size:16px;font-weight:800;color:#8C9A96}
+.tbd .td{font-size:13px;color:#A5AFA9;margin-top:7px;line-height:1.75}
+.tbd .td b{color:#7C8B87}
+
+.foot{text-align:center;color:#B0B8B4;font-size:11.5px;line-height:1.9;margin-top:34px;padding-top:20px;border-top:1px dashed #EFE8DF}
+.toast{position:fixed;left:50%;bottom:40px;transform:translateX(-50%) translateY(20px);background:rgba(40,52,49,.93);
+  color:#fff;padding:11px 20px;border-radius:14px;font-size:14px;opacity:0;pointer-events:none;transition:all .28s ease;z-index:99}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* ---------- 产品17 追加 ---------- */
+.disc{background:#F7F3EC;border-radius:16px;padding:13px 14px;margin-top:18px;font-size:12.5px;line-height:1.8;color:#7C8A86}
+.disc b{color:#54635F}
+.main p{line-height:1.9}
+.ch .blk p{line-height:1.95}
+.chq{margin-top:18px;padding-top:16px;border-top:1px dashed #EFE8DF}
+.chq .qtcap{margin:0 0 8px}
+.chq .qtcap .t{font-size:14px}
+.chq .qtwrap{padding:12px 10px 10px;box-shadow:none;border:1px solid #EFE7DC;border-radius:18px;margin-top:0}
+.toast{position:fixed;left:50%;bottom:40px;transform:translateX(-50%) translateY(20px);background:rgba(40,52,49,.93);color:#fff;padding:10px 16px;border-radius:12px;font-size:12.5px;opacity:0;transition:.22s;pointer-events:none;z-index:99;max-width:82vw;text-align:center}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+/* 速查表行：卡 + 可复制话术 */
+.qcard{background:#fff;border-radius:20px;padding:16px 16px 14px;box-shadow:0 6px 22px rgba(74,90,84,.07);margin-top:12px}
+.qcard.core{border-left:4px solid #4E8C84}
+.qcard.sup{background:#FBF8F2}
+.qcard .qh{display:flex;gap:9px;align-items:flex-start}
+.qcard .qn{width:26px;height:26px;flex:0 0 26px;border-radius:9px;background:#EAF3F0;color:#4E8C84;font-size:12.5px;font-weight:800;display:flex;align-items:center;justify-content:center;margin-top:2px}
+.qcard.sup .qn{background:#F0EAE0;color:#A0927E}
+.qcard .qt{font-size:14.5px;font-weight:800;color:#33403D;line-height:1.6}
+.qcard .qm{font-size:12.6px;line-height:1.85;color:#6E7D79;margin-top:8px}
+.qcard .qm b{color:#4B5C58}
+.qcard .tagline{font-size:11.5px;font-weight:800;color:#4E8C84;margin-top:8px}
+.qcard.sup .tagline{color:#A0927E}
+.qlines{margin-top:10px}
+.ql{display:flex;gap:9px;align-items:flex-start;background:#FAF6F0;border-radius:12px;padding:10px 11px;margin-top:8px;border:1px dashed #E7DFD3}
+.ql .t{flex:1;font-size:12.8px;line-height:1.8;color:#4B5C58}
+.ql .t b{display:block;font-size:11px;color:#9AA7A3;font-weight:800;margin-bottom:2px}
+.ql .cp{flex:0 0 auto;font-size:11.5px;font-weight:800;color:#4E8C84;background:#EAF3F0;border-radius:9px;padding:4px 8px;margin-top:2px}
+.ql:active{background:#F2ECE2}
+.qsup{background:#F7F3EC;border-radius:12px;padding:10px 12px;margin-top:8px;border:1px dashed #E4DCD0}
+.qsup .t{font-size:12.6px;line-height:1.8;color:#6E7D79}
+.qsup .t b{display:block;font-size:11px;color:#A79E8F;font-weight:800;margin-bottom:2px}
+/* 清单 */
+.chk{background:#fff;border-radius:20px;padding:16px 16px 8px;box-shadow:0 6px 22px rgba(74,90,84,.07);margin-top:12px}
+.chk li{list-style:none;font-size:13px;line-height:1.85;color:#54635F;padding:6px 0;border-bottom:1px dashed #F0EAE1;display:flex;gap:9px}
+.chk li:last-child{border-bottom:none}
+.chk .bx{flex:0 0 15px;width:15px;height:15px;border-radius:4px;border:1.5px solid #C9D8D4;margin-top:5px}
+/* 小测 */
+.bars{background:#fff;border-radius:20px;padding:16px 16px 18px;box-shadow:0 6px 22px rgba(74,90,84,.07);margin-top:14px}
+.bars .bt{font-size:13px;font-weight:800;color:#33403D;margin-bottom:14px}
+.barrow{margin-bottom:12px}
+.barrow .bl{display:flex;justify-content:space-between;font-size:12.5px;color:#54635F;font-weight:700;margin-bottom:6px}
+.barrow .bl span:last-child{color:#4E8C84;font-weight:800}
+.bar{height:9px;border-radius:99px;background:#EBE3D9;overflow:hidden}
+.bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#8FC7BC,#E9A178)}
+.scorebar{height:7px;border-radius:99px;background:#EBE3D9;overflow:hidden;margin:14px 0 6px}
+.scorebar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#8FC7BC,#E9A178)}
+.scoretxt{font-size:12px;color:#8C9A96;font-weight:700}
+</style>
+</head>
+<body>
+<div class="wrap">
+<aside class="side">
+<div class="st">CONTENTS</div>
+<div class="sp"><span class="n">1</span>拿东西比</div>
+<a href="#c1" data-t="c1"><span class="st2">本期</span>01 拿收入比</a>
+<a href="#t2" data-t="t2"><span class="st3">框架</span>02 拿学历比</a>
+<a href="#t3" data-t="t3"><span class="st3">框架</span>03 拿履历和公司规模比</a>
+<div class="sp"><span class="n">2</span>拿身体和外表</div>
+<a href="#t4" data-t="t4"><span class="st3">框架</span>04 拿身材和年龄开玩笑</a>
+<a href="#t5" data-t="t5"><span class="st3">框架</span>05 拿穿着消费开玩笑</a>
+<a href="#t6" data-t="t6"><span class="st3">框架</span>06 拿家庭和婚恋情况开玩笑</a>
+<div class="sp"><span class="n">3</span>当众与权威</div>
+<a href="#c7" data-t="c7"><span class="st2">本期</span>07 被当众开玩笑</a>
+<a href="#c8" data-t="c8"><span class="st3">框架</span>08 老板说你跟某某不一样</a>
+<a href="#t9" data-t="t9"><span class="st3">框架</span>09 玩笑开到自己头上</a>
+<div class="sp"><span class="n">4</span>熟人与私事</div>
+<a href="#c10" data-t="c10"><span class="st2">本期</span>10 朋友拿你的糏事开玩笑</a>
+<a href="#t11" data-t="t11"><span class="st3">框架</span>11 亲戚拿你和别人家孩子比</a>
+<a href="#t12" data-t="t12"><span class="st3">框架</span>12 玩笑之后怎么把关系接回来</a>
+<div class="sp"><span class="n">★</span>速查与自测</div>
+<a href="#kit" data-t="kit">十八句现成回应</a>
+<a href="#sup" data-t="sup">补充场景</a>
+<a href="#check" data-t="check">玩笑边界自检清单</a>
+<a href="#test" data-t="test">你在玩笑里的边界感</a>
+<a href="#howto" data-t="howto">怎么用这本手册</a>
+</aside>
+  <div class="main">
+<div class="mobilenav"><div class="mrow">
+<a href="#top" class="mchip" data-c="top">封面</a>
+<a href="#kit" class="mchip" data-c="kit">十八句</a>
+<a href="#sup" class="mchip" data-c="sup">补充</a>
+<a href="#c1" class="mchip" data-c="c1">01 比收入</a>
+<a href="#c7" class="mchip" data-c="c7">07 当众</a>
+<a href="#c10" class="mchip" data-c="c10">10 朋友</a>
+<a href="#check" class="mchip" data-c="check">清单</a>
+<a href="#test" class="mchip" data-c="test">小测</a>
+</div></div>
+    <section class="cover" id="top">
+      <div class="eyebrow">JOKED & COMPARED KIT</div>
+      <h1 class="h1">被比较与被开玩笑应对话术包</h1>
+      <p class="lede">被比学历、被比收入、被当众开玩笑 —— 六类场景，三档说法。<br>4 部分 12 节里先给你 3 节正文。</p>
+      <div class="chips">
+        <span class="chip">6 类主场景</span>
+        <span class="chip">十八句现成回应</span>
+        <span class="chip">4 部分 12 节</span>
+        <span class="chip">玩笑边界自检清单</span>
+      </div>
+    </section>
+
+    <div class="card">
+      <div class="kicker">怎么用这本手册</div>
+      <p>被拿来比较、当众开玩笑，这两件事的共同点是：<b>你在几秒内要接一句</b>，而且当着人。</p>
+      <p>这本手册把这类场面拆成 4 部分共 <b>12 节</b>，本期开放 <b>3 节正文</b>（01 拿收入比 / 07 被当众开玩笑 / 10 朋友拿你的糏事开玩笑），其余章节目录已列出，正文待后续展开。</p>
+      <div class="rule"></div>
+      <p class="muted">速查表共 12 行：<b>前 6 行是六个主场景</b>，每个场景三档说法（直接版 / 留台阶版 / 轻松版），合计 <b>十八句现成回应</b>，点一下就复制；<b>后 6 行是补充场景</b>，每行给一个接话方向，不计入十八句。另附一页玩笑边界自检清单和 4 题「你在玩笑里的边界感」小测。本资料为沟通参考，不构成专业心理评估、诊断或医疗建议；话术是参考句不是标准答案，请按你面对的人和场合调整。</p>
+    </div>
+
+    <section id="kit">
+      <h2>十八句现成回应</h2>
+      <p class="muted">六个主场景，每个场景三档说法，一共十八句。点一下句子就复制，可以直接粘进聊天框。</p>
+<div class="qcard core">
+<div class="qh"><div class="qn">1</div><div class="qt">拿收入比</div></div>
+<div class="qm"><b>对应节：</b>第 01 节<br><b>什么时候用：</b>饭桌上有人问「你一个月挣多少」，或者把你的收入跟另一个人摆在一起比。<br><b>补一个动作：</b>答完就把话头递回去，别停在收入上</div>
+<div class="qlines">
+<div class="ql" data-copy="工资这事儿我不太方便聊。换个话题吧——你们那边这阵子怎么样？"><div class="t"><b>直接版</b>工资这事儿我不太方便聊。换个话题吧——你们那边这阵子怎么样？</div><div class="cp">拷贝</div></div>
+<div class="ql" data-copy="我收入就那样，跟大多数人差不多，不值得比。倒是你这几年看着混得不错。"><div class="t"><b>留台阶版</b>我收入就那样，跟大多数人差不多，不值得比。倒是你这几年看着混得不错。</div><div class="cp">拷贝</div></div>
+<div class="ql" data-copy="哈哈，这个比法太直接了，我这边保密级别高，不让公开。"><div class="t"><b>轻松版</b>哈哈，这个比法太直接了，我这边保密级别高，不让公开。</div><div class="cp">拷贝</div></div>
+</div></div>
+<div class="qcard core">
+<div class="qh"><div class="qn">2</div><div class="qt">拿学历比</div></div>
+<div class="qm"><b>对应节：</b>第 02 节<br><b>什么时候用：</b>有人拿你的学校、专业跟别人比，或者顺口一句「你那个学历也能进这儿？」。<br><b>补一个动作：</b>把话题转到能力和结果上，别在学历上自证</div>
+<div class="qlines">
+<div class="ql" data-copy="学历是过去的事，我这一年干的活，你看结果就行。"><div class="t"><b>直接版</b>学历是过去的事，我这一年干的活，你看结果就行。</div><div class="cp">拷贝</div></div>
+<div class="ql" data-copy="我学历一般，经验上补了一些。咱聊事情，别比证书。"><div class="t"><b>留台阶版</b>我学历一般，经验上补了一些。咱聊事情，别比证书。</div><div class="cp">拷贝</div></div>
+<div class="ql" data-copy="我读书不行，混社会还行，现在靠手吃饭。"><div class="t"><b>轻松版</b>我读书不行，混社会还行，现在靠手吃饭。</div><div class="cp">拷贝</div></div>
+</div></div>
+<div class="qcard core">
+<div class="qh"><div class="qn">3</div><div class="qt">拿身材和年龄开玩笑</div></div>
+<div class="qm"><b>对应节：</b>第 04 节<br><b>什么时候用：</b>有人拿你胖瘦、身高、年纪开玩笑，说的是玩笑话，落点在你身上。<br><b>补一个动作：</b>笑着收一次，不接第二次</div>
+<div class="qlines">
+<div class="ql" data-copy="这个玩笑别开在我身上，换个话题吧。"><div class="t"><b>直接版</b>这个玩笑别开在我身上，换个话题吧。</div><div class="cp">拷贝</div></div>
+<div class="ql" data-copy="你们乐归乐，别拿我开涮啊，说点别的。"><div class="t"><b>留台阶版</b>你们乐归乐，别拿我开涮啊，说点别的。</div><div class="cp">拷贝</div></div>
+<div class="ql" data-copy="行，这个我认，岁月不饶人，我接受。"><div class="t"><b>轻松版</b>行，这个我认，岁月不饶人，我接受。</div><div class="cp">拷贝</div></div>
+</div></div>
+<div class="qcard core">
+<div class="qh"><div class="qn">4</div><div class="qt">被当众开玩笑</div></div>
+<div class="qm"><b>对应节：</b>第 07 节<br><b>什么时候用：</b>一群人面前，有人拿你的糗事、失误、穿着开玩笑，桌上的人都听见了。<br><b>补一个动作：</b>接住一次就够，别自己接着往下抖</div>
+<div class="qlines">
+<div class="ql" data-copy="这个玩笑当着这么多人开，我不太舒服。换个话题吧。"><div class="t"><b>直接版</b>这个玩笑当着这么多人开，我不太舒服。换个话题吧。</div><div class="cp">拷贝</div></div>
+<div class="ql" data-copy="哈哈，挺好笑。不过咱们能换个话题吗，这个我不太想接。"><div class="t"><b>留台阶版</b>哈哈，挺好笑。不过咱们能换个话题吗，这个我不太想接。</div><div class="cp">拷贝</div></div>
+<div class="ql" data-copy="行，我配合笑一下啊——这话题咱们过一下。"><div class="t"><b>轻松版</b>行，我配合笑一下啊——这话题咱们过一下。</div><div class="cp">拷贝</div></div>
+</div></div>
+<div class="qcard core">
+<div class="qh"><div class="qn">5</div><div class="qt">老板说你跟某某不一样</div></div>
+<div class="qm"><b>对应节：</b>第 08 节<br><b>什么时候用：</b>上级当着大家说「你跟某某不一样」，可能是在抬你，也可能是在划线。<br><b>补一个动作：</b>把差别讲成方法差别，不要讲成高低</div>
+<div class="qlines">
+<div class="ql" data-copy="确实不一样。我做的是这块，我把我这半年的东西讲两句。"><div class="t"><b>直接版</b>确实不一样。我做的是这块，我把我这半年的东西讲两句。</div><div class="cp">拷贝</div></div>
+<div class="ql" data-copy="可能我跟他走的不是同一条路，所以做法不一样。差别在这儿，我说完您看合不合适。"><div class="t"><b>留台阶版</b>可能我跟他走的不是同一条路，所以做法不一样。差别在这儿，我说完您看合不合适。</div><div class="cp">拷贝</div></div>
+<div class="ql" data-copy="不一样好，要是一样那我也没机会站这儿了。"><div class="t"><b>轻松版</b>不一样好，要是一样那我也没机会站这儿了。</div><div class="cp">拷贝</div></div>
+</div></div>
+<div class="qcard core">
+<div class="qh"><div class="qn">6</div><div class="qt">朋友拿你的糏事开玩笑</div></div>
+<div class="qm"><b>对应节：</b>第 10 节<br><b>什么时候用：</b>熟人在饭局上翻你以前的黑历史，当成一桌子人的笑料。<br><b>补一个动作：</b>当场收一句，散场后单独再说一次</div>
+<div class="qlines">
+<div class="ql" data-copy="这事已经翻篇了，别再提了。换个新梗吧。"><div class="t"><b>直接版</b>这事已经翻篇了，别再提了。换个新梗吧。</div><div class="cp">拷贝</div></div>
+<div class="ql" data-copy="行，这段黑历史你留着过年用，别每次聚会都拿出来。"><div class="t"><b>留台阶版</b>行，这段黑历史你留着过年用，别每次聚会都拿出来。</div><div class="cp">拷贝</div></div>
+<div class="ql" data-copy="哎哟，这黑历史翻多少遍了，来，说点别的。"><div class="t"><b>轻松版</b>哎哟，这黑历史翻多少遍了，来，说点别的。</div><div class="cp">拷贝</div></div>
+</div></div>
+    </section>
+
+    <section id="sup">
+      <h2>补充场景</h2>
+      <p class="muted">后六个场景各给一个接话方向，属于补充材料，不计入上面的十八句。</p>
+<div class="qcard sup">
+<div class="qh"><div class="qn">7</div><div class="qt">拿履历和公司规模比</div></div>
+<div class="qm"><b>对应节：</b>第 03 节<br><b>什么时候用：</b>有人把「你在哪家公司、什么背景」当成高低标尺。<br><b>补一个动作：</b>别去比平台大小，比你手上那张牌。</div>
+<div class="qsup"><div class="t"><b>接话方向</b>我们公司规模不一样，但活儿是我自己在干，这事咱看结果。</div></div>
+</div>
+<div class="qcard sup">
+<div class="qh"><div class="qn">8</div><div class="qt">拿穿着消费开玩笑</div></div>
+<div class="qm"><b>对应节：</b>第 05 节<br><b>什么时候用：</b>有人拿你的衣服、鞋子、价格打趣。<br><b>补一个动作：</b>一句带过，不解释。</div>
+<div class="qsup"><div class="t"><b>接话方向</b>我这身衣服是旧的，穿得舒服就行。</div></div>
+</div>
+<div class="qcard sup">
+<div class="qh"><div class="qn">9</div><div class="qt">拿家庭和婚恋情况开玩笑</div></div>
+<div class="qm"><b>对应节：</b>第 06 节<br><b>什么时候用：</b>有人问起你家里、对象、什么时候结婚，并且拿来开玩笑。<br><b>补一个动作：</b>这类话题不在饭桌上接。</div>
+<div class="qsup"><div class="t"><b>接话方向</b>家里那点事就不在桌上聊了，说点别的。</div></div>
+</div>
+<div class="qcard sup">
+<div class="qh"><div class="qn">10</div><div class="qt">玩笑开到自己头上</div></div>
+<div class="qm"><b>对应节：</b>第 09 节<br><b>什么时候用：</b>玩笑绕了一圈，落回你自己身上。<br><b>补一个动作：</b>先护住自己，再谈别的。</div>
+<div class="qsup"><div class="t"><b>接话方向</b>这会儿别拿我开涮，玩笑开到自己头上不好接。</div></div>
+</div>
+<div class="qcard sup">
+<div class="qh"><div class="qn">11</div><div class="qt">亲戚拿你和别人家孩子比</div></div>
+<div class="qm"><b>对应节：</b>第 11 节<br><b>什么时候用：</b>长辈当着饭桌把你和别人家孩子摆在一起比。<br><b>补一个动作：</b>把话题引到孩子身上，不接比较。</div>
+<div class="qsup"><div class="t"><b>接话方向</b>各家情况不一样，比不了。</div></div>
+</div>
+<div class="qcard sup">
+<div class="qh"><div class="qn">12</div><div class="qt">玩笑之后怎么把关系接回来</div></div>
+<div class="qm"><b>对应节：</b>第 12 节<br><b>什么时候用：</b>一段玩笑过去，对方和你之间的气氛有点僵。<br><b>补一个动作：</b>散场后单独说一句，别当着人。</div>
+<div class="qsup"><div class="t"><b>接话方向</b>刚才那段就到这儿吧，咱说点正事。</div></div>
+</div>
+    </section>
+
+    <div class="part">
+      <div class="part-h"><span class="pn">1</span><span class="pt">拿东西比</span></div>
+      <p class="part-sub">对应场景：拿收入比 · 拿学历比 · 拿履历和公司规模比</p>
+<article class="ch" id="c1">
+<div class="ck">第 01 节 · 本期正文</div>
+<h2 class="ct">拿收入比</h2>
+<p class="cs">收入属于很难拒绝的一类话题：你没法说谎，也不想把真实数字摆到桌上。答案的关键不是藏，是换。</p>
+<div class="blk"><div class="lbl"><span class="n">1</span>场景</div>
+<p>饭桌上有人问「你一个月挣多少呀」，紧接着又补一句「我听说你比老王高」。全桌的目光就转过来了。</p>
+<p>很多人这时候选了两条路：说一个比实际低的数字，或者干脆顶回去。两条都不划算——报低数字后面会被追问，顶回去当场就把气氛弄僵。收入话题有个特点：它是可以转移的，只要你不把话停在数字上。</p>
+</div>
+<div class="blk"><div class="lbl"><span class="n">2</span>先判断什么</div><ul>
+<li><span class="d"></span><span><b>对方是随口问，还是要比？</b>随口问就笑着转开；要比就只给范围，不给准确数字。</span></li>
+<li><span class="d"></span><span><b>在场的人是谁？</b>熟人在场可以自嘲一句，陌生人在场就往公事上带。</span></li>
+<li><span class="d"></span><span><b>这个话题是谁挑起来的？</b>如果是别人替你报的数，你要澄清；如果是自己说的，就顺势收住。</span></li>
+<li><span class="d"></span><span><b>说完之后停在哪？</b>停在数字上你会被继续追，停在别的话题上才安全。</span></li>
+</ul></div>
+<div class="blk"><div class="lbl"><span class="n">3</span>三种具体说法</div>
+<div class="say b1"><div class="sn">1</div><div class="st"><div class="sh">直接版</div><div class="sq">「工资这事儿我不太方便聊。换个话题吧——你们那边这阵子怎么样？」</div><div class="sn2">适用：对方在追着问，你不想给数字。</div></div></div>
+<div class="say b2"><div class="sn">2</div><div class="st"><div class="sh">留台阶版</div><div class="sq">「我收入就那样，跟大多数人差不多，不值得比。倒是你这几年看着混得不错。」</div><div class="sn2">适用：对方明着要比，先把比较这件事本身挡回去，再夸回去。</div></div></div>
+<div class="say b3"><div class="sn">3</div><div class="st"><div class="sh">轻松版</div><div class="sq">「哈哈，这个比法太直接了，我这边保密级别高，不让公开。」</div><div class="sn2">适用：气氛不僵，可以用玩笑带过。</div></div></div>
+</div>
+<div class="blk"><div class="lbl"><span class="n">4</span>对方继续追问怎么回</div><ul>
+<li><span class="d"></span><span><b>「差多少啊，说个数呗。」</b>→ 「不给具体数字，但我可以跟你讲讲今年行情怎么样。」</span></li>
+<li><span class="d"></span><span><b>「哎，别装，又不是外人。」</b>→ 「正因为是熟人才不聊这个，咱说点别的更尽兴。」</span></li>
+<li><span class="d"></span><span><b>「那你年终奖总有个说法吧。」</b>→ 「这个也是公司定的，我不方便讲。不过我这行今年普遍还行。」</span></li>
+</ul></div>
+<div class="blk"><div class="lbl"><span class="n">5</span>今天能完成的小练习</div><div class="prac"><ul>
+<li><span class="d"></span><span>写一句你自己的挡话，句子里不要出现任何数字。</span></li>
+<li><span class="d"></span><span>再写一句带反问的版本，说完让对方能接下去。</span></li>
+<li><span class="d"></span><span>练习一次：让朋友连问三句「挣多少」，你只用同一句挡回去，不补充新信息。</span></li>
+</ul></div></div>
+<div class="chq">
+<div class="qtcap"><div class="t">本节速查表</div><div class="b">来不及读整节时看这三行</div></div>
+<div class="qtwrap"><table class="qt">
+<thead><tr><th>什么时候</th><th>场景</th><th>一句话怎么说</th><th>补一个动作</th></tr></thead>
+<tbody>
+<tr><td class="pn">被追着问数字</td><td class="sg">对方要准确数</td><td class="ans">工资这事儿我不太方便聊</td><td class="sg">一句带过不补充</td></tr>
+<tr><td class="pn">明着要比</td><td class="sg">拿你跟别人摆一起</td><td class="ans">跟大多数人差不多，不值得比</td><td class="sg">把比较本身挡回去</td></tr>
+<tr><td class="pn">气氛轻松</td><td class="sg">只是顺着话头</td><td class="ans">我这边保密级别高</td><td class="sg">用玩笑滑过去</td></tr>
+</tbody></table></div>
+</div>
+<div class="chfoot"><a class="rbtn" href="#kit">回到十八句现成回应</a></div>
+</article>
+<div class="tbd" id="t2">
+<div class="tt">02 拿学历比</div>
+<div class="td">识别信号：对方把学校、专业、证书当成评价你的尺子<br>改法：把话题转到能力和结果上，一句带过证书话题<br>记住一句：<b>学历是入场券，不是成绩单。</b> 本节正文待展开。</div>
+</div>
+<div class="tbd" id="t3">
+<div class="tt">03 拿履历和公司规模比</div>
+<div class="td">识别信号：有人把公司名、平台大小当成高低标尺<br>改法：认下差异，把落点放在你手上做的事上<br>记住一句：<b>平台是别人的，交付是你自己的。</b> 本节正文待展开。</div>
+</div>
+    </div>
+
+    <div class="part">
+      <div class="part-h"><span class="pn">2</span><span class="pt">拿身体和外表</span></div>
+      <p class="part-sub">对应场景：身材和年龄 · 穿着消费 · 家庭与婚恋情况</p>
+<div class="tbd" id="t4">
+<div class="tt">04 拿身材和年龄开玩笑</div>
+<div class="td">识别信号：拿胖瘦、身高、年纪打趣，笑点落在你身上<br>改法：接住一次就好，第二次用一句玩笑把话带走<br>记住一句：<b>玩笑能开一次，第二次就不算好笑了。</b> 本节正文待展开。</div>
+</div>
+<div class="tbd" id="t5">
+<div class="tt">05 拿穿着消费开玩笑</div>
+<div class="td">识别信号：从你的衣服鞋子价格找出调侃的点<br>改法：一句带过，不解释价格也不自嘲<br>记住一句：<b>你穿什么不影响你做事。</b> 本节正文待展开。</div>
+</div>
+<div class="tbd" id="t6">
+<div class="tt">06 拿家庭和婚恋情况开玩笑</div>
+<div class="td">识别信号：话题滑到家里、对象、什么时候结婚<br>改法：提前把话题挪开，或者只回一句就换方向<br>记住一句：<b>这类话题在桌上不值得接。</b> 本节正文待展开。</div>
+</div>
+    </div>
+
+    <div class="part">
+      <div class="part-h"><span class="pn">3</span><span class="pt">当众与权威</span></div>
+      <p class="part-sub">对应场景：当众开玩笑 · 老板说你跟某某不一样 · 玩笑开到自己头上</p>
+<article class="ch" id="c7">
+<div class="ck">第 07 节 · 本期正文</div>
+<h2 class="ct">被当众开玩笑</h2>
+<p class="cs">同样的玩笑，私下开是亲近，当众开就换了性质。当众的难处在于：你的反应会被所有人一起读。</p>
+<div class="blk"><div class="lbl"><span class="n">1</span>场景</div>
+<p>十几个人在吃饭，有人突然说：「他当年那事你听说了吗？」接着就是一串大家都笑过的段子。你也在笑，因为不笑更尴尬。</p>
+<p>私下的玩笑你有一整秒决定怎么接，当众的玩笑所有人都盯着你。你要是接得太狠，气氛直接冷掉；接得太软，下次他还开。合适的做法是：认下一点，同时把话题带走，不要把这段变成自己的表演。</p>
+</div>
+<div class="blk"><div class="lbl"><span class="n">2</span>先判断什么</div><ul>
+<li><span class="d"></span><span><b>这个玩笑是不是关于你的？</b>关于你就要处理，不关于你就可以笑着听。</span></li>
+<li><span class="d"></span><span><b>在场的人有多少？</b>人越多，越要把回应控制在两句以内。</span></li>
+<li><span class="d"></span><span><b>对方和你的关系是什么？</b>同事、领导、客户、熟人，边界不一样。</span></li>
+<li><span class="d"></span><span><b>你今天要不要跟这个人打交道？</b>以后还要合作，就留台阶；以后不再见，就可以说清。</span></li>
+</ul></div>
+<div class="blk"><div class="lbl"><span class="n">3</span>三种具体说法</div>
+<div class="say b1"><div class="sn">1</div><div class="st"><div class="sh">直接版</div><div class="sq">「这个玩笑当着这么多人开，我不太舒服。换个话题吧。」</div><div class="sn2">适用：这段黑事你真的不想再被提，而且你以后还要跟他打交道。</div></div></div>
+<div class="say b2"><div class="sn">2</div><div class="st"><div class="sh">留台阶版</div><div class="sq">「哈哈，挺好笑。不过咱们能换个话题吗，这个我不太想接。」</div><div class="sn2">适用：气氛还没僵，你想收但不想让对方下不来台。</div></div></div>
+<div class="say b3"><div class="sn">3</div><div class="st"><div class="sh">轻松版</div><div class="sq">「行，我配合笑一下啊——这话题咱们过一下。」</div><div class="sn2">适用：对方只是顺嘴一提，你也不想把事闹大。</div></div></div>
+</div>
+<div class="blk"><div class="lbl"><span class="n">4</span>对方继续追问怎么回</div><ul>
+<li><span class="d"></span><span><b>「开玩笑都不让开啊？」</b>→ 「能开，但这段我不太想被反复提。换个话题我照样聊。」</span></li>
+<li><span class="d"></span><span><b>「那你自己说一个。」</b>→ 「我今天带的料不够，给你们讲个不相关的。」</span></li>
+<li><span class="d"></span><span><b>「行行行不说了，回头单独给你赔不是。」</b>→ 「不用赔，下回换个新梗就行。」</span></li>
+</ul></div>
+<div class="blk"><div class="lbl"><span class="n">5</span>今天能完成的小练习</div><div class="prac"><ul>
+<li><span class="d"></span><span>找出你很怕被当众提起的那件事，写一句当众能用的挡话。</span></li>
+<li><span class="d"></span><span>写两个版本：一个留台阶，一个说清楚，各写一句。</span></li>
+<li><span class="d"></span><span>练习一次：让朋友在第三个人面前开你的一段黑历史，你只用一句话处理。</span></li>
+</ul></div></div>
+<div class="chq">
+<div class="qtcap"><div class="t">本节速查表</div><div class="b">来不及读整节时看这三行</div></div>
+<div class="qtwrap"><table class="qt">
+<thead><tr><th>什么时候</th><th>场景</th><th>一句话怎么说</th><th>补一个动作</th></tr></thead>
+<tbody>
+<tr><td class="pn">当众开你糗事</td><td class="sg">全桌都在听</td><td class="ans">这个玩笑当着这么多人开，我不太舒服</td><td class="sg">控制在一句之内</td></tr>
+<tr><td class="pn">气氛还没僵</td><td class="sg">对方顺嘴一提</td><td class="ans">挺好笑，不过换个话题吧</td><td class="sg">收住但不翻脸</td></tr>
+<tr><td class="pn">只是打趣</td><td class="sg">人多但没恶意</td><td class="ans">我配合笑一下，这话题过一下</td><td class="sg">带过去就收</td></tr>
+</tbody></table></div>
+</div>
+<div class="chfoot"><a class="rbtn" href="#kit">回到十八句现成回应</a></div>
+</article>
+<div class="tbd" id="t8">
+<div class="tt">08 老板说你跟某某不一样</div>
+<div class="td">识别信号：上级当众拿你和另一个人对照<br>改法：把差别讲成方法差别，再讲你手上这段的进展<br>记住一句：<b>被拿来比较时，你只需要讲自己那段。</b> 本节正文待展开。</div>
+</div>
+<div class="tbd" id="t9">
+<div class="tt">09 玩笑开到自己头上</div>
+<div class="td">识别信号：玩笑绕了一圈，落回你自己身上<br>改法：先护住自己，再考虑要不要给台阶<br>记住一句：<b>接自己的话容易，护自己难。</b> 本节正文待展开。</div>
+</div>
+    </div>
+
+    <div class="part">
+      <div class="part-h"><span class="pn">4</span><span class="pt">熟人与私事</span></div>
+      <p class="part-sub">对应场景：朋友拿糏事开玩笑 · 亲戚拿你和别人家孩子比 · 玩笑之后怎么接回来</p>
+<article class="ch" id="c10">
+<div class="ck">第 10 节 · 本期正文</div>
+<h2 class="ct">朋友拿你的糏事开玩笑</h2>
+<p class="cs">熟人翻你的旧账，是因为他觉得那是你的一部分。问题在于：那段是不是你想让别人记住的那部分。</p>
+<div class="blk"><div class="lbl"><span class="n">1</span>场景</div>
+<p>第三次聚会了。他又讲起你大学时候那件糗事，一桌人照旧笑成一片。你跟着笑，笑完心里想：这事儿能不能别再提了。</p>
+<p>朋友之间的玩笑和陌生人不一样：陌生人开你一次，你可以远离；朋友开你一次，说明他把你当成能开这种玩笑的人。想让这段玩笑停下来，光在饭桌上笑过去没用，得有一次单独说清楚——你不想被反复提，不是不想被提起过一次。</p>
+</div>
+<div class="blk"><div class="lbl"><span class="n">2</span>先判断什么</div><ul>
+<li><span class="d"></span><span><b>这件事对你意味着什么？</b>丢人、无所谓、还是当时受过伤？只有后两种可以不较真。</span></li>
+<li><span class="d"></span><span><b>他知不知道你介意？</b>他可能真不知道，那就是说清楚的问题，不是翻脸的问题。</span></li>
+<li><span class="d"></span><span><b>这句话你会自己讲吗？</b>你自己讲是分享，别人替你讲就是被曝光。</span></li>
+<li><span class="d"></span><span><b>他有没有停下来的可能？</b>多数人有。你给一句明确的话，他就会换新梗。</span></li>
+</ul></div>
+<div class="blk"><div class="lbl"><span class="n">3</span>三种具体说法</div>
+<div class="say b1"><div class="sn">1</div><div class="st"><div class="sh">直接版</div><div class="sq">「这事已经翻篇了，别再提了。换个新梗吧。」</div><div class="sn2">适用：同样的段子已经翻过好几次，你需要一句明确的话。</div></div></div>
+<div class="say b2"><div class="sn">2</div><div class="st"><div class="sh">留台阶版</div><div class="sq">「行，这段黑历史你留着过年用，别每次聚会都拿出来。」</div><div class="sn2">适用：你想提醒他，但不想把气氛弄僵。</div></div></div>
+<div class="say b3"><div class="sn">3</div><div class="st"><div class="sh">轻松版</div><div class="sq">「哎哟，这黑历史翻多少遍了，来，说点别的。」</div><div class="sn2">适用：次数还不多，你只当他没长记性。</div></div></div>
+</div>
+<div class="blk"><div class="lbl"><span class="n">4</span>对方继续追问怎么回</div><ul>
+<li><span class="d"></span><span><b>「不都是朋友吗，说两句怎么了？」</b>→ 正因为是朋友，我才想让你知道我介意的是哪一段。」</span></li>
+<li><span class="d"></span><span><b>「我以为你不介意啊。」</b>→ 我是不介意被提起一次，但每次都拿出来，次数多了就不一样了。」</span></li>
+<li><span class="d"></span><span><b>「那我不说了，显得我多小气。」</b>→ 不是小气，是同一段被翻太多次，别人也会跟着记很久。」</span></li>
+</ul></div>
+<div class="blk"><div class="lbl"><span class="n">5</span>今天能完成的小练习</div><div class="prac"><ul>
+<li><span class="d"></span><span>挑一段你被反复提起的旧事，写一句能收住它的话。</span></li>
+<li><span class="d"></span><span>再写一句留给散场后单独说的版本，语气更软一点。</span></li>
+<li><span class="d"></span><span>这周把这段说给那个朋友听一次，只说一次，看他什么反应。</span></li>
+</ul></div></div>
+<div class="chq">
+<div class="qtcap"><div class="t">本节速查表</div><div class="b">来不及读整节时看这三行</div></div>
+<div class="qtwrap"><table class="qt">
+<thead><tr><th>什么时候</th><th>场景</th><th>一句话怎么说</th><th>补一个动作</th></tr></thead>
+<tbody>
+<tr><td class="pn">同一段翻过好几次</td><td class="sg">一桌人都听熟了</td><td class="ans">这事翻篇了，别再提了</td><td class="sg">明确说一次</td></tr>
+<tr><td class="pn">头一回被提</td><td class="sg">他没恶意</td><td class="ans">这段留着过年用，别每次都拿</td><td class="sg">提醒但不翻脸</td></tr>
+<tr><td class="pn">次数还不算多</td><td class="sg">他只是没长记性</td><td class="ans">这黑历史翻多少遍了</td><td class="sg">带过去就收</td></tr>
+</tbody></table></div>
+</div>
+<div class="chfoot"><a class="rbtn" href="#kit">回到十八句现成回应</a></div>
+</article>
+<div class="tbd" id="t11">
+<div class="tt">11 亲戚拿你和别人家孩子比</div>
+<div class="td">识别信号：饭桌上被拿来和别家孩子摆在一起<br>改法：不比，把话题引到具体的孩子身上<br>记住一句：<b>各家情况不同，比不出结果。</b> 本节正文待展开。</div>
+</div>
+<div class="tbd" id="t12">
+<div class="tt">12 玩笑之后怎么把关系接回来</div>
+<div class="td">识别信号：玩笑过去了，对方和你之间有点僵<br>改法：散场后单独说一句，把刚才那段翻过去<br>记住一句：<b>当面翻篇容易，私下说一句更稳。</b> 本节正文待展开。</div>
+</div>
+    </div>
+
+    <section id="check">
+      <h2>玩笑边界一页自检清单</h2>
+      <p class="muted">每次饭局前后翻一遍，有一条没过，就在那一行停一下。</p>
+<div class="chk"><ul>
+<li><span class="bx"></span><span>这次玩笑落在谁身上？我是被指的那一个吗？</span></li>
+<li><span class="bx"></span><span>我笑着接了，是真的觉得好笑，还是不想尴尬？</span></li>
+<li><span class="bx"></span><span>同一段黑事被提过几次了？到第三次就该说话。</span></li>
+<li><span class="bx"></span><span>在场有我不熟的人吗？有的话回应要更短。</span></li>
+<li><span class="bx"></span><span>我现在需要的是笑过去，还是把话收住？</span></li>
+<li><span class="bx"></span><span>把话收住，我准备用哪一句？</span></li>
+<li><span class="bx"></span><span>这句要不要留台阶——以后还要和这个人打交道吗？</span></li>
+<li><span class="bx"></span><span>散场后要不要单独跟他说一次？</span></li>
+<li><span class="bx"></span><span>他停下来了，我需要谢谢他吗？</span></li>
+<li><span class="bx"></span><span>下次再被开同样的玩笑，我的第二句是什么？</span></li>
+</ul></div>
+    </section>
+
+    <section id="test">
+      <h2>你在玩笑里的边界感</h2>
+      <p class="muted">4 道题，看你是硬碰、会接，还是忍到内伤。</p>
+      <div class="qwrap" id="qwrap"></div>
+    </section>
+
+    <section id="howto">
+      <div class="card">
+        <div class="kicker">交付与使用说明</div>
+        <p>这是一份单文件网页资料，拍下后自动发货一条链接，手机浏览器打开就能用，同一条链接可以反复使用。</p>
+        <p class="muted">整个页面是单个网页文件，提前存在手机里断网也能看；手机上先存好，下次直接点开。本资料为沟通参考，不构成专业心理评估、诊断或医疗建议。</p>
+      </div>
+      <div class="disc"><b>售后说明</b><br>虚拟资料，付款后不支持退款。页面打不开或显示异常，可在订单里联系售后处理。</div>
+    </section>
+
+    <div class="foot">
+      被比较与被开玩笑应对话术包 · 六类场景十八句现成回应<br>
+      单文件网页，手机打开即用，断网也能看
+    </div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+var QZ = [["有人当众开了你一段黑历史，你当场开口那句通常是？",[["直接顶回去：这事别再提了。",[2,0,1],"A"],["笑一下，然后把话题带走。",[1,2,2],"B"],["跟着一起笑，装作没听见。",[0,1,0],"C"]]],["饭桌上有人拿你的收入跟别人比，你？",[["当场问回去：你一个月多少？",[2,0,0],"A"],["一句带过，然后聊别的。",[1,2,2],"B"],["心里记下，脸上带过。",[0,1,0],"C"]]],["同一段糗事被朋友提过好几次，你？",[["当场说明白：这段别再提了。",[2,1,2],"A"],["当场轻描淡写，事后私下说一次。",[1,2,2],"B"],["每次都笑着接，心里攒着。",[0,0,0],"C"]]],["一段玩笑过去之后，你和对方的气氛有点僵，你？",[["当场把话顶回去，说完就算。",[2,0,0],"A"],["先接住情绪，事后单独跟他说一句。",[1,2,2],"B"],["什么都不说，过两天自己消化。",[0,0,0],"C"]]]];
+var RES = [["A","硬碰型","你当场就说了，反应快、态度清楚。好处是话不憋着，风险是桌上的人跟着尴尬，尤其是对方没恶意的时候。",4,[[["先说事实再表态","「这段我不太想被反复提」比「你什么意思」少一层对抗。"],["留半句台阶","说完收住，加一句「别的玩笑都行」，对方就不至于挂在那。"],["分清场合","当众用短句，私下补完整说明，别把两件事混在一句里。"],["别连着追问","说一次就够了，反复提会把小事变成事故。"]]],"把「你什么意思」换成「这段我不太想被提了」，当场说一遍。"],["B","会接型","你能接住也能收：先让场面过去，再把该说的单独说清楚。这是成本较低的一种做法。",4,[[["当场一句带过","玩笑当下先不接，留到散场后单独处理。"],["私下说一次","私下说的效果比当面强，也不用让对方当众下不来台。"],["同一段第二次就说话","一次是亲近，两次是习惯，第三次该收。"],["收住之后别追","对方换梗了，这事就翻篇。"]]],"这周挑一段被反复提的旧事，散场后单独跟对方说一次。"],["C","忍到内伤型","你多数时候都笑着接住，场面一直很好。代价是这类事会在心里攒着，攒到某天你在别的地方发火。",4,[[["先分清有没有恶意","不是所有玩笑都带着恶意，但也不都要你忍着。"],["第三次就开口","同一段黑事反复出现，是时候说一句了。"],["挑私下场合说","私下说不会伤场面，也不必当场表态。"],["别攒着","攒着的话，收尾常常是在别的事情上爆出来。"]]],"写下一个你一直在忍的玩笑，写一句你能说出口的话。"]];
+var DIMS = [["now","当场回应"],["turn","转移话题"],["after","事后翻篇"]];
+var qi = 0, picks = [];
+
+(function(){
+  var links=[].slice.call(document.querySelectorAll('.side a'));
+  var chips=[].slice.call(document.querySelectorAll('.mchip'));
+  function go(e){
+    var href=this.getAttribute('href');
+    if(!href||href.charAt(0)!=='#') return;
+    var el=document.querySelector(href);
+    if(!el) return;
+    e.preventDefault();
+    var top=el.getBoundingClientRect().top+window.pageYOffset-64;
+    window.scrollTo({top:top,behavior:'smooth'});
+  }
+  links.forEach(function(a){a.addEventListener('click',go);});
+  chips.forEach(function(a){a.addEventListener('click',go);});
+  var ids=links.map(function(a){return a.getAttribute('data-t');});
+  function highlight(){
+    var y=window.pageYOffset+90, cur='';
+    ids.forEach(function(id){
+      var el=document.getElementById(id);
+      if(el&&el.getBoundingClientRect().top+window.pageYOffset<=y) cur=id;
+    });
+    links.forEach(function(a){a.classList.toggle('open',a.getAttribute('data-t')===cur);});
+    chips.forEach(function(a){a.classList.toggle('on',a.getAttribute('data-c')===cur);});
+  }
+  var t=null;
+  window.addEventListener('scroll',function(){if(t)return;t=setTimeout(function(){t=null;highlight();},80);});
+  highlight();
+})();
+
+function toast(m){var t=document.getElementById('toast');t.textContent=m;t.classList.add('on');clearTimeout(t._h);t._h=setTimeout(function(){t.classList.remove('on');},1500);}
+function copyText(txt){
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(txt).then(function(){toast('已复制，去聊天框里粘上');},function(){fallback(txt);});
+  } else { fallback(txt); }
+}
+function fallback(txt){
+  var ta=document.createElement('textarea');ta.value=txt;ta.style.position='fixed';ta.style.opacity='0';
+  document.body.appendChild(ta);ta.select();
+  try{document.execCommand('copy');toast('已复制，去聊天框里粘上');}catch(e){toast('长按选中这段文字也可以复制');}
+  document.body.removeChild(ta);
+}
+document.addEventListener('click',function(e){
+  var line=e.target.closest('[data-copy]');
+  if(line){copyText(line.getAttribute('data-copy'));return;}
+  var opt=e.target.closest('.opt');
+  if(opt){pick(parseInt(opt.getAttribute('data-i'),10));return;}
+});
+
+function goSection(id){
+  var el=document.getElementById(id);
+  if(el){window.scrollTo(0,el.offsetTop-8);}
+}
+function showTest(){qi=0;picks=[];renderQ();goSection('test');}
+function renderQ(){
+  var wrap=document.getElementById('qwrap');
+  if(qi>=QZ.length){renderResult();return;}
+  var q=QZ[qi];
+  var h='<div class="qcnt">第 <b>'+(qi+1)+'</b> / '+QZ.length+' 题</div>';
+  h+='<div class="qbar"><i style="width:'+Math.round((qi+1)/QZ.length*100)+'%"></i></div>';
+  h+='<div class="qtext">'+q[0]+'</div><div class="opts">';
+  for(var i=0;i<q[1].length;i++){
+    h+='<button class="opt" data-i="'+i+'"><span class="k">'+'ABC'[i]+'</span><span>'+q[1][i][0]+'</span></button>';
+  }
+  h+='</div><button class="backbtn" onclick="goSection(\'kit\')">先返回上面看看十八句</button>';
+  wrap.innerHTML=h;
+}
+function pick(i){
+  var q=QZ[qi];
+  if(!q) return;
+  picks.push(q[1][i][1]);
+  picks[picks.length-1].push(q[1][i][2]);
+  qi++;
+  renderQ();
+}
+function renderResult(){
+  var sums=[0,0,0], counts={}, scoreOf={};
+  for(var i=0;i<picks.length;i++){
+    var s=picks[i];
+    for(var d=0;d<3;d++) sums[d]+=s[d];
+    var tag=s[3];
+    counts[tag]=(counts[tag]||0)+1;
+    scoreOf[tag]=(scoreOf[tag]||0)+s[0]+s[1]+s[2];
+  }
+  var band=null, best=-1, bestScore=-1;
+  for(var j=0;j<RES.length;j++){
+    var tag=RES[j][0];
+    var c=counts[tag]||0;
+    var sc=scoreOf[tag]||0;
+    if(c>best||(c===best&&sc>bestScore)){best=c;bestScore=sc;band=RES[j];}
+  }
+  var mx=QZ.length*2;
+  var h='<div class="res-hero" style="background:linear-gradient(135deg,'+band[2]+'22,'+band[2]+'0A)">';
+  h+='<div class="kicker" style="color:'+band[2]+'">玩笑里的边界 · 测试结果</div>';
+  h+='<div class="tname" style="color:'+band[2]+'">'+band[1]+'</div>';
+  h+='<div class="oneline" style="color:#4B5C58">'+band[3]+'</div>';
+  h+='</div>';
+  h+='<div class="bars"><div class="bt">三项得分（每项满分 '+mx+'）</div>';
+  for(var k=0;k<DIMS.length;k++){
+    var pct=Math.round(sums[k]/mx*100);
+    h+='<div class="barrow"><div class="bl"><span>'+DIMS[k][1]+'</span><span>'+sums[k]+' / '+mx+'</span></div>';
+    h+='<div class="bar"><i style="width:'+pct+'%"></i></div></div>';
+  }
+  var total=sums[0]+sums[1]+sums[2];
+  h+='<div class="scoretxt">总分 '+total+' / '+(mx*3)+' 分</div>';
+  h+='<div class="scorebar"><i style="width:'+Math.round(total/(mx*3)*100)+'%"></i></div>';
+  h+='</div>';
+  h+='<div class="res-list">';
+  for(var t=0;t<band[4][0].length;t++){
+    h+='<div class="res-item"><div class="ic" style="background:'+band[2]+'">'+(t+1)+'</div><div class="tx"><b>'+band[4][0][t][0]+'</b>'+band[4][0][t][1]+'</div></div>';
+  }
+  h+='</div>';
+  h+='<div class="disc"><b>今天能完成的一个小练习</b><br>'+band[5]+'</div>';
+  h+='<button class="rbtn p" onclick="showTest()">再测一次</button>';
+  h+='<button class="rbtn s" onclick="goSection(\'kit\')">回到十八句</button>';
+  document.getElementById('qwrap').innerHTML=h;
+}
+</script>
+</body>
+</html>
